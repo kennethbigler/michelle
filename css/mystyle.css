@@ -17,6 +17,15 @@ a {
 	text-decoration: none;
 }
 
+a:hover .bottom, a:hover .top {
+	border: 0.5em solid black;
+}
+
+a:hover .bottom:after, a:hover .top:after {
+	border-top: 0.5em solid black;
+	border-right: 0.5em solid black;
+}
+
 div.container{
 	position: absolute;
 	top: 3em;
@@ -61,6 +70,8 @@ h1 {
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	-moz-transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
 	transform: translate(-50%,-50%);
 	font-size: 5vw;
 
@@ -81,6 +92,60 @@ footer {
 	color: white;
 	height: 3em;
 	line-height: 3em;
+}
+
+.bottom {
+	display: block;
+	width: 4em;
+	height: 4em;
+	border: 0.5em solid white;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 3em;
+	left: 50%;
+	-moz-transform: translateX(-50%);
+	-webkit-transform: translate(-50%);
+	transform: translate(-50%);
+}
+
+.bottom:after {
+	content: '';
+	display: inline-block;
+	margin-top: 0.6em;
+	width: 1.4em;
+	height: 1.4em;
+	border-top: 0.5em solid white;
+	border-right: 0.5em solid white;
+	-moz-transform: rotate(135deg);
+	-webkit-transform: rotate(135deg);
+	transform: rotate(135deg);
+}
+
+.top {
+	display: block;
+	width: 4em;
+	height: 4em;
+	border: 0.5em solid white;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 3em;
+	left: 50%;
+	-moz-transform: translateX(-50%);
+	-webkit-transform: translate(-50%);
+	transform: translate(-50%);
+}
+
+.top:after {
+	content: '';
+	display: inline-block;
+	margin-top: 1.4em;
+	width: 1.4em;
+	height: 1.4em;
+	border-top: 0.5em solid white;
+	border-right: 0.5em solid white;
+	-moz-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
 }
 
 #s1 {
