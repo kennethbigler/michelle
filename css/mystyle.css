@@ -31,18 +31,45 @@ div.container::-webkit-scrollbar {
 }
 
 section {
-	height: 1080px;
-	width: 1920px;
+	position: relative;
+	width: 100%;
 	display: block;
 	margin: auto;
 	color: white;
 	text-align: center;
-	line-height: 40em;
+}
+section:before {
+	content: "";
+	display: block;
+	padding-top: 56.25%;
 }
 
-h1, p {
+div.content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+h1 {
 	margin: 0;
 	font-family: 'Lato', sans-serif;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%);
+	transform: translateX(-50%);
+
+}
+
+p, h2 {
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+}
+
+h2 {
+	font-size: 2em;
 }
 
 footer {
@@ -63,6 +90,7 @@ footer {
 
 #s3 {
 	background-color: yellow;
+	color: black !important;
 }
 
 #s4 {
