@@ -17,6 +17,7 @@ a {
 	text-decoration: none;
 }
 
+/* Pure CSS Icons, Arrows Inside of Circles By Sam Peniak */
 a:hover .bottom, a:hover .top {
 	border: 0.5em solid black;
 }
@@ -25,6 +26,7 @@ a:hover .bottom:after, a:hover .top:after {
 	border-top: 0.5em solid black;
 	border-right: 0.5em solid black;
 }
+/* end Sam Peniak code */
 
 div.container{
 	position: absolute;
@@ -94,6 +96,8 @@ footer {
 	line-height: 3em;
 }
 
+/* Pure CSS Icons, Arrows Inside of Circles By Sam Peniak */
+/* main changes I made were to center the button better on the page */
 .bottom {
 	display: block;
 	width: 4em;
@@ -147,6 +151,7 @@ footer {
 	-webkit-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 }
+/* end Sam Peniak code */
 
 #s1 {
 	background-color: red;
