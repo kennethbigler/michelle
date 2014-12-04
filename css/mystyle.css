@@ -50,6 +50,9 @@ div.content {
 	left: 0;
 	bottom: 0;
 	right: 0;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
 }
 
 h1 {
@@ -58,8 +61,8 @@ h1 {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translateY(-50%);
-	transform: translateX(-50%);
+	transform: translate(-50%,-50%);
+	font-size: 5vw;
 
 }
 
@@ -91,6 +94,7 @@ footer {
 #s3 {
 	background-color: yellow;
 	color: black !important;
+	text-shadow: 1px 1px #888;
 }
 
 #s4 {
