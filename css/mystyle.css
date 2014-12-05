@@ -52,7 +52,7 @@ section {
 section:before {
 	content: "";
 	display: block;
-	padding-top: 56.25%;
+	padding-top: 51%;
 }
 
 div.content {
