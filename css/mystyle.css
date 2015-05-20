@@ -96,6 +96,21 @@ footer {
 	line-height: 3em;
 }
 
+#mywarning {
+	color: white;
+	display: none;
+	max-width: 1000px;
+	margin: 0px auto;
+	text-align: center;
+	font-size: 1.5em !important;
+}
+
+#mywarning a {
+	text-decoration: underline;
+	color: white;
+	font-size: 1.5em;
+}
+
 /* Pure CSS Icons, Arrows Inside of Circles By Sam Peniak */
 /* main changes I made were to center the button better on the page */
 .bottom {
